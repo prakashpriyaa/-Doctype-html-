@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            font-family: 'Courier New', Courier, monospace;
+            color:#fff;
+        }
+        .box-section{
+            width:80%;
+            margin:20px auto;
+            background-color: black;
+            padding: 40px;
+        }
+        b{
+            padding: 30px;
+            font-size: 25px;
+            display: block;
+            text-align: center;
+            color:blanchedalmond;
+        }
+        h2{
+            padding: 20px;
+        }
+        h1{
+            background-color: #fff;
+            color: rgb(136, 2, 2);
+            padding: 20px;
+            border: 1px solid;
+        }
+        span{
+            color: rgb(0, 47, 255);
+        }
+        label{
+            color: red;
+        }
+        .browser-support{
+            padding: 20px 0px;
+        }
+        table{
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            border:1px solid #000;
+            border-collapse:collapse;
+        }
+        th,td{
+            font-size: 16px;
+            font-weight: bold;
+            color:black;
+            text-align: left;
+            padding: 12px;
+            border:1px solid #000;
+        }
+        table tr:nth-child(2){
+            background-color: rgb(65 63 63 / 20%);
+        }
+       .valid-tags{
+           padding: 20px;
+       }
+       .valid-tags img{
+           width: 100%;
+       }
+       .difference{
+           width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-bottom:20px
+       }
+       video,audio{
+           border: 2px solid #fff;
+           display: block;
+           margin: 0px 20px;
+           border-radius: 27px;
+       }
+       .major{
+           font-size: 30px;
+           text-align: center;
+           padding: 40px 0px;
+           font-weight: bold;
+       }
+       .mb-2{
+           margin-bottom: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="box-section">
+        <b>HTML DOCTYPE DECLARATION </b>
+        <h2>HTML 5 : </h2>
+        <h1><span><</span>!DOCTYPE <label>html</label><span>></span></h1>
+        <h2>HTML 4.01 : </h2>
+        <h1><span><</span>!DOCTYPE <label>HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"</label><span>></span></h1>
+        <h1><span><</span>!DOCTYPE <label>HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"</label><span>></span></h1>
+        <h2>XHTML 1.1:</h2>
+        <h1><span><</span>!DOCTYPE <label>html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"</label><span>></span></h1>
+        <h1><span><</span>!DOCTYPE <label>html html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"</label><span>></span></h1>
+        <h1><span><</span>!DOCTYPE <label>html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"</label><span>></span></h1>
+        <div class="browser-support">
+            <h2>Browser Support :</h2>
+            <table>
+                <tr>
+                    <th>Element</th>
+                    <th><img src="images/google.gif" alt="google"></th>
+                    <th><img src="images/edge.png" alt="google"></th>
+                    <th><img src="images/firefox.png" alt="google"></th>
+                    <th><img src="images/opera.gif" alt="google"></th>
+                    <th><img src="images/safari.gif" alt="google"></th>
+                </tr>
+                <tr>
+                    <td><span><</span>!DOCTYPE<span>></span></td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tips">
+            <h2>Tip: The <!DOCTYPE> declaration is NOT case sensitive :</h2>
+            <div class="example">
+                <h1><span><</span>!DOCTYPE<span>></span></h1>
+                <h1><span><</span>!DocType<span>></span></h1>
+                <h1><span><</span>!Doctype <span>></span></h1>
+                <h1><span><</span>!doctype <span>></span></h1>
+            </div>
+        </div>
+        <div class="valid-tags">
+            <h2>Valid Html Elements Different DOCTYPES :</h2>
+            <img src="images/html tags.PNG" alt="tags">
+        </div>
+        <b>HTML 4 and HTML 5 Major Different</b>
+        <h2>Video & Audio</h2>
+        <div class="difference">
+            <video width="50%" height="400px" controls loop autoplay>
+                <source src="images/intro.mp4" type="video/mp4">
+                this video does not support
+            </video>
+            <audio width="500px" height="100px" controls loop>
+                <source src="images/audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <h2>Scalable vector graphics (SVG) & Canvas (Draw graphics)</h2>
+        <div class="mb-2">
+       <svg widht="100px" height="100px">
+          <circle cx="50px" cy="50px" r="40px" stroke="white" stroke-widht="4" fill="blue"></circle>
+       </svg>
+       <canvas id="myCanvas" width="200" height="100" style="border:1px solid #ffffff;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        </div>
+        <h2>Storage</h2>
+        <img src="images/storage.jpg" alt="localstorage" class="mb-2">
+        <div class="browser-support">
+            <h2>Browser Support :</h2>
+            <table>
+                <tr>
+                    <th>Element</th>
+                    <th><img src="images/google.gif" alt="google"></th>
+                    <th><img src="images/edge.png" alt="google"></th>
+                    <th><img src="images/firefox.png" alt="google"></th>
+                    <th><img src="images/opera.gif" alt="google"></th>
+                    <th><img src="images/safari.gif" alt="google"></th>
+                </tr>
+                <tr>
+                    <td><span><</span>!DOCTYPE<span> html></span></td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.strokeStyle = "red";
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+    </script> 
+</html>
